@@ -1,7 +1,7 @@
 # chatbot-gemini-ai
 Chatbot Google Gemini AI para colocar em sites e aplicações.
 
-![Imagem Chatbot Gemini IA](https://teckins.com/chatbot/chatbot-gemini-ai.png)
+![Imagem Chatbot Gemini IA](https://teckins.com/chatbot/chatbot-gemini-ai-2.png)
 
 [Interaja exclusivamente com o Chatbot em funcionamento](https://teckins.com/chatbot) ou [Interaja com o Chatbot no site da Teckins](https://teckins.com/)
 
