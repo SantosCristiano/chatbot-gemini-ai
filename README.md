@@ -3,7 +3,9 @@ Chatbot Google Gemini AI para colocar em sites e aplicações.
 
 ![Imagem Chatbot Gemini IA](https://teckins.com/chatbot/chatbot-gemini-ai-2.png)
 
-[Interaja exclusivamente com o Chatbot em funcionamento](https://teckins.com/chatbot) ou [Interaja com o Chatbot no site da Teckins](https://teckins.com/)
+[Interaja exclusivamente com o Chatbot em funcionamento](https://teckins.com/chatbot)
+
+[Interaja com o Chatbot no site da Teckins](https://teckins.com/)
 
 ## Chatbot Gemini
 Este é o repositório do projeto Chatbot Google Gemini AI, um chatbot baseado em inteligência artificial que utiliza o modelo generativo da Google para responder perguntas e interagir com os usuários em sites e aplicações.
