@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', async function() {
           }
         }
       };
-      xhr.open('GET', '../chatbot/get_api_key.php');
+      xhr.open('GET', 'get_api_key.php');
       xhr.send();
     });
   }
