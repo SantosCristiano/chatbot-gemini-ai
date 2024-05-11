@@ -1,0 +1,155 @@
+/* Estilos para o container do chatbot */
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: height 0.5s ease; /* Adiciona transição suave para a mudança de altura */
+  z-index: 99999999;
+}
+
+/* Estilos para o cabeçalho do chatbot */
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #4CAF50; /* Alterada a cor de fundo */
+  color: white; /* Alterada a cor do texto */
+  border-radius: 10px 10px 0 0;
+  background-image: linear-gradient(145deg, rgba(19, 177, 205, 0.97) 0%, rgba(152, 119, 234, 0.97) 100%);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição para mudança de cor */
+}
+
+/* Estilos para a área de conversa */
+.chatbot-conversation-area {
+  padding: 10px;
+  max-height: 300px; /* Definida uma altura máxima para a área de conversa */
+  overflow-y: auto; /* Adicionado scroll vertical */
+}
+
+/* Estilos para o campo de pergunta do usuário */
+#user-question-input {
+  width: calc(100% - 85px); /* Ajuste para a largura do botão */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Estilos para o botão de envio */
+#send-question-button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Estilos para as mensagens do chatbot */
+.chatbot-message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.chatbot-message.user-message {
+  background-color: #f0f0f0;
+}
+
+.chatbot-message.gemini-message {
+  background-color: #e0e0ff;
+}
+
+/* Estilo para o indicador de carregamento */
+#loading-indicator {
+  display: none;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto; /* Centralizar horizontalmente */
+}
+
+/* Animação de rotação do indicador de carregamento */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estilo para o círculo do indicador de carregamento */
+#loading-indicator::after {
+  content: '';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #3f51b5;
+  border-color: rgba(19, 177, 205, 0.97) transparent rgba(152, 119, 234, 0.97) transparent;
+  animation: spin 1.2s linear infinite;
+}
+
+/* Estilo para a div âncora no final da conversa */
+#scroll-anchor {
+  height: 1px; /* Garante que a div seja invisível */
+  width: 100%;
+}
+
+/* Estilo para textarea */
+#user-question-input {
+  margin: 10px 0;
+  /* width: calc(100% - 20px);  Reduz a largura para acomodar o botão */
+}
+
+/* Estilo para o botão de enviar */
+#send-question-button {
+  display: block;
+  margin: 20px auto; /* Centralizar horizontalmente */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  width: 80%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-image: linear-gradient(145deg, rgba(19, 177, 205, 0.97) 0%, rgba(152, 119, 234, 0.97) 100%);
+}
+
+#send-question-button:hover {
+  background-color: #2c387e; /* Cor mais escura ao passar o mouse */
+}
+
+.title-chat {
+  color: #ffffff;
+}
+
+/* Estilo para o botão Min/Max */
+#minimize-maximize-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background-color: #1369c4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adiciona transição suave */
+  margin-left: 20px;
+}
+
+#minimize-maximize-button:hover {
+  background-color: #007bff; /* Cor mais escura ao passar o mouse */
+}
+
+/* Adiciona estilo quando o chatbot está minimizado */
+#chatbot-container.minimized {
+  height: 80px; /* Define a altura mínima quando minimizado */
+  transition: height 0.5s ease; /* Adiciona transição suave para a mudança de altura */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Gemini</title>
+  <link rel="stylesheet" href="../chatbot/style.css">
+</head>
+<body>
+  <div id="chatbot-container">
+    <div class="chatbot-header">
+      <h2 class="title-chat">Chatbot Gemini AI</h2>
+      <button id="minimize-maximize-button">Min</button>
+    </div>
+    <div class="chatbot-conversation-area">
+      <div id="chatbot-history" style="overflow-y: auto;"></div>
+      <!-- Div âncora para ajuste de scroll -->
+      <div id="scroll-anchor"></div>
+      <div id="loading-indicator"></div>
+      <textarea rows="4" cols="50" id="user-question-input" placeholder="Ask me anything..."></textarea>
+      <button id="send-question-button">Submit</button>
+      <div style="text-align: center">
+        <p><a href="https://teckins.com" target="_blank">Teckins </a> ❤️ Made in Brazil by <a href="https://www.linkedin.com/in/cris-santos-038100100/" target="_blank">Cris Santos</a></p>
+      </div>
+    </div>
+  </div>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="../chatbot/script.js"></script>
+</body>
+</html>
