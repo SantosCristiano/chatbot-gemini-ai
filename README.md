@@ -22,7 +22,7 @@ script.js: Script JavaScript responsável por controlar a lógica do chatbot e a
 
 style.css: Arquivo CSS para estilização da interface do chatbot.
 
-.env: Arquivo de ambiente contendo a chave de API (API_KEY) do modelo generativo (GEMINI).
+.env: Arquivo de ambiente contendo a chave de API (API_KEY) do modelo generativo (GEMINI). [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
 
 get_api_key.php: Script PHP para obter a chave de API do arquivo .env.
 
@@ -31,7 +31,7 @@ Para configurar e executar o projeto localmente, siga estas etapas:
 
 Clone este repositório em sua máquina.
 
-Crie um arquivo .env na raiz do projeto e adicione a chave de API (API_KEY) do modelo generativo da Google (GEMINI).
+Crie um arquivo .env na raiz do projeto e adicione a chave de API (API_KEY) do modelo generativo da Google (GEMINI). [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
 
 Configure um servidor local (xampp, wamp) para executar o PHP, se necessário.
 
